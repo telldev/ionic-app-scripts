@@ -6,6 +6,8 @@
   "author": "Ionic Team <hi@ionic.io> (https://ionic.io)",
   "license": "MIT",
   "files": [
+    "src/",
+    "scripts/",
     "bin/",
     "config/",
     "dist/",
@@ -17,6 +19,7 @@
     "ionic-app-scripts": "./bin/ionic-app-scripts.js"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run clean && tsc && npm run sass",
     "build-and-test": "jest",
     "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s",
